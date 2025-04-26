@@ -9,6 +9,8 @@
 </head>
 <body>
     <x-navbar />
-    {{ $slot }}
+    <div class="content my-12 mx-40">
+        {{ $slot }}
+    </div>
 </body>
 </html>
