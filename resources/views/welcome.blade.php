@@ -29,4 +29,23 @@
             </div>
         </div>
     </section>
+    <section class="newest-article-section my-6 grid grid-cols-12 gap-8">
+        <div class="newest-article-container col-span-8">
+            <div class="newest-article-title flex justify-between content-center-safe bg-[#02A28F] py-3 px-6 rounded-xl drop-shadow-xl mb-3">
+                <h2 class="text-xl font-montserrat font-bold text-[#FFFFFF]">
+                    Paling Populer
+                </h2>
+                <a href="#" class="text-base underline font-montserrat text-[#FFFFFF]">
+                    Lebih Banyak
+                </a>
+            </div>
+        </div>
+        <div class="category-container col-span-4">
+            <div class="side-title bg-[#02A28F] p-3 rounded-xl drop-shadow-xl mb-3">
+                <h2 class="text-xl font-montserrat font-bold text-[#FFFFFF] text-center">
+                    Kategori
+                </h2>
+            </div>
+        </div>
+    </section>
 </x-default-layout>
