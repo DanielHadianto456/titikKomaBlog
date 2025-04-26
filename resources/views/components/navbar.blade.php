@@ -3,11 +3,11 @@
         <h1 class="text-4xl font-montserrat font-bold text-[#FFFFFF]">Kang Tutor</h1>
     </div>
     <div class="navbar-items font-montserrat font-medium flex gap-5">
-        <a href="#" class="text-[#FFFFFF]">Beranda</a>
-        <a href="#" class="text-[#FFFFFF]">Tutorial</a>
-        <a href="#" class="text-[#FFFFFF]">Pemrograman</a>
-        <a href="#" class="text-[#FFFFFF]">Teknologi</a>
-        <a href="#" class="text-[#FFFFFF]">
+        <a href="#" class="text-[#FFFFFF] text-base">Beranda</a>
+        <a href="#" class="text-[#FFFFFF] text-base">Tutorial</a>
+        <a href="#" class="text-[#FFFFFF] text-base">Pemrograman</a>
+        <a href="#" class="text-[#FFFFFF] text-base">Teknologi</a>
+        <a href="#" class="text-[#FFFFFF] text-base">
             <i class="fa-solid fa-magnifying-glass"></i>
         </a>
     </div>
