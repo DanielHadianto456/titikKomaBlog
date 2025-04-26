@@ -12,5 +12,6 @@
     <div class="content my-12 mx-40">
         {{ $slot }}
     </div>
+    <x-footer />
 </body>
 </html>
