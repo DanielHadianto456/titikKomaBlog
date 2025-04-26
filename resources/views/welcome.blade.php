@@ -33,7 +33,7 @@
         <div class="newest-article-container col-span-8">
             <div class="newest-article-title flex justify-between content-center-safe bg-[#02A28F] py-3 px-6 rounded-xl drop-shadow-xl mb-3">
                 <h2 class="text-xl font-montserrat font-bold text-[#FFFFFF]">
-                    Paling Populer
+                    Postingan Terbaru
                 </h2>
                 <a href="#" class="text-base underline font-montserrat text-[#FFFFFF]">
                     Lebih Banyak
