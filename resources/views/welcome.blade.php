@@ -17,12 +17,12 @@
             </div>
         </div>
         <div class="side-article col-span-4 flex flex-col">
-            <div class="side-title bg-[#02A28F] p-2 rounded-xl drop-shadow-xl mb-3">
+            <div class="side-title bg-[#02A28F] p-3 rounded-xl drop-shadow-xl mb-3">
                 <h2 class="text-xl font-montserrat font-bold text-[#FFFFFF] text-center">
                     Paling Populer
                 </h2>
             </div>
-            <div class="side-article-list flex flex-col gap-3 flex-grow">
+            <div class="side-article-list flex flex-col gap-5 flex-grow">
                 <x-horizontal-article-card />
                 <x-horizontal-article-card />
                 <x-horizontal-article-card />
