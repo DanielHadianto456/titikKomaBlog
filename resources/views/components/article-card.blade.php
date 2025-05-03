@@ -1,5 +1,5 @@
 <div class="newest-article-card flex flex-col shadow-2xl rounded-xl">
-    <img class="rounded-xl h-[30vh] object-cover" src="https://cdn.britannica.com/22/187222-050-07B17FB6/apples-on-a-tree-branch.jpg" alt="">
+    <img class="rounded-xl h-[30vh] object-cover" src={{ $image ?? "-" }} alt="">
     <div class="flex flex-col newest-article-description px-3 py-4 gap-3">
         <div class="newest-article-credentials">
             <h3 class="article-category text-sm leading-4 text-[#02A28F]">

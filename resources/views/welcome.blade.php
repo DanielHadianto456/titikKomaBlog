@@ -40,34 +40,16 @@
                 </a>
             </div>
             <div class="newest-articles grid grid-cols-2 gap-4">
-                <x-article-card 
-                    category="Technology" 
-                    title="New Programming Language Released" 
-                    author="Jane Doe"
-                    description="A revolutionary new programming language was released today..."
-                    date="April 30, 2025" 
-                />
-                <x-article-card 
-                    category="Technology" 
-                    title="New Programming Language Released" 
-                    author="Jane Doe"
-                    description="A revolutionary new programming language was released today..."
-                    date="April 30, 2025" 
-                />
-                <x-article-card 
-                    category="Technology" 
-                    title="New Programming Language Released" 
-                    author="Jane Doe"
-                    description="A revolutionary new programming language was released today..."
-                    date="April 30, 2025" 
-                />
-                <x-article-card 
-                    category="Technology" 
-                    title="New Programming Language Released" 
-                    author="Jane Doe"
-                    description="A revolutionary new programming language was released today..."
-                    date="April 30, 2025" 
-                />
+                @foreach ($articles as $article)
+                    <x-article-card
+                        image="{{ $article->image }}"
+                        category="{{ $article->category->name }}" 
+                        title="{{ $article->title }}" 
+                        author="{{ $article->author }}"
+                        description="{{ $article->content }}"
+                        date="{{ $article->date }}" 
+                    />
+                @endforeach
             </div>
         </div>
         <div class="category-container col-span-4">
