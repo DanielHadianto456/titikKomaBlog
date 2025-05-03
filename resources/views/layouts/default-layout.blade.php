@@ -17,7 +17,7 @@
                     @yield('main_content')
                 </div>
                 <div class="col-span-4">
-                    @yield('sidebar_content')
+                    <x-sidebar />
                 </div>
             </div>
         @endif
