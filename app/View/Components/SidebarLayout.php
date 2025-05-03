@@ -6,7 +6,7 @@ use Closure;
 use Illuminate\View\Component;
 use Illuminate\Contracts\View\View;
 
-class horizontal-article-card extends Component
+class SidebarLayout extends Component
 {
     /**
      * Create a new component instance.
@@ -21,6 +21,10 @@ class horizontal-article-card extends Component
      */
     public function render(): View|Closure|string
     {
-        return view('components.horizontal-article-card');
+        return <<<'blade'
+<div>
+    <!-- People find pleasure in different ways. I find it in keeping my mind clear. - Marcus Aurelius -->
+</div>
+blade;
     }
 }
