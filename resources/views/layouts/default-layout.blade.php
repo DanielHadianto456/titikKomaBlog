@@ -11,16 +11,14 @@
     <x-navbar />
     <div class="content my-12 mx-40">
         {{-- {{ $slot }} --}}
-        @hasSection('use_sidebar')
-            <div class="grid grid-cols-12 gap-6">
-                <div class="col-span-8">
-                    @yield('main_content')
-                </div>
-                <div class="col-span-4">
-                    <x-sidebar />
-                </div>
+        <div class="grid grid-cols-12 gap-6">
+            <div class="col-span-8">
+                @yield('main_content')
             </div>
-        @endif
+            <div class="col-span-4">
+                <x-sidebar />
+            </div>
+        </div>
     </div>
     <x-footer />
 </body>
