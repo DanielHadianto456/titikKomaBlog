@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Home;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Models\Article;
+use Illuminate\Support\Str;
 
 class HomeController extends Controller
 {
@@ -14,6 +15,11 @@ class HomeController extends Controller
     public function index()
     {
         $articles = Article::with('category')->latest()->get();
+        $articles->transform(function ($article) {
+            $article->content = Str::limit($article->content, 120, '...');
+            return $article;
+        });
+        
         return view('welcome', compact('articles'));
     }
 
