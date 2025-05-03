@@ -8,6 +8,7 @@ export default {
     theme: {
       extend: {
         fontFamily: {
+          'sans': ['Montserrat', 'ui-sans-serif', 'system-ui', 'sans-serif', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji'],
           'montserrat': ['Montserrat', 'sans-serif'],
           'sans': ['Instrument Sans', 'ui-sans-serif', 'system-ui', 'sans-serif'],
           'inter': ['Inter', 'sans-serif'],
