@@ -39,6 +39,36 @@
                     Lebih Banyak
                 </a>
             </div>
+            <div class="newest-articles grid grid-cols-2 gap-4">
+                <x-article-card 
+                    category="Technology" 
+                    title="New Programming Language Released" 
+                    author="Jane Doe"
+                    description="A revolutionary new programming language was released today..."
+                    date="April 30, 2025" 
+                />
+                <x-article-card 
+                    category="Technology" 
+                    title="New Programming Language Released" 
+                    author="Jane Doe"
+                    description="A revolutionary new programming language was released today..."
+                    date="April 30, 2025" 
+                />
+                <x-article-card 
+                    category="Technology" 
+                    title="New Programming Language Released" 
+                    author="Jane Doe"
+                    description="A revolutionary new programming language was released today..."
+                    date="April 30, 2025" 
+                />
+                <x-article-card 
+                    category="Technology" 
+                    title="New Programming Language Released" 
+                    author="Jane Doe"
+                    description="A revolutionary new programming language was released today..."
+                    date="April 30, 2025" 
+                />
+            </div>
         </div>
         <div class="category-container col-span-4">
             <div class="side-title bg-[#02A28F] p-3 rounded-xl drop-shadow-xl mb-3">
