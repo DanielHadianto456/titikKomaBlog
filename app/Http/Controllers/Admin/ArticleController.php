@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use App\Models\Article;
 
 class ArticleController extends Controller
 {
@@ -12,7 +13,8 @@ class ArticleController extends Controller
      */
     public function index()
     {
-        return view('admin/articles/index');
+        $articles = Article::with('category')->latest()->get();
+        return view('admin/articles/index', compact('articles'));
     }
 
     /**
