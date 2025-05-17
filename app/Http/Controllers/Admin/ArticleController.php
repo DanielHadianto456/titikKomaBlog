@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
+use App\Models\ArticleCategory;
 use Illuminate\Http\Request;
 use App\Http\Requests\Admin\Article\StoreArticleRequest;
 use App\Models\Article;
@@ -23,7 +24,8 @@ class ArticleController extends Controller
      */
     public function create()
     {
-        return view('admin/articles/create');
+        $categories = ArticleCategory::all();
+        return view('admin/articles/create', compact('categories'));
     }
 
     /**

@@ -49,7 +49,9 @@
                             </div>
                            <div>
                                 <select name="category_id" id="category" class="w-full p-2 border border-gray-300 rounded-md">
-                                    <option value="">test</option>
+                                    @foreach ($categories as $category)
+                                        <option value="{{ $category->id }}">{{ $category->name }}</option>
+                                    @endforeach
                                 </select>
                            </div>
                         </div>
