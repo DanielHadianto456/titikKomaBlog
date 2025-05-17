@@ -66,4 +66,7 @@
             </div>
         </div>
     </div>
+    <script>
+        CKEDITOR.replace('content');
+    </script>
 </x-app-layout>
