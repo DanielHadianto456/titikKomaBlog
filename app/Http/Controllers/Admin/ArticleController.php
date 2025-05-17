@@ -7,6 +7,7 @@ use App\Models\ArticleCategory;
 use Illuminate\Http\Request;
 use App\Http\Requests\Admin\Article\StoreArticleRequest;
 use App\Models\Article;
+use Illuminate\Support\Facades\Storage;
 
 class ArticleController extends Controller
 {
@@ -33,7 +34,21 @@ class ArticleController extends Controller
      */
     public function store(StoreArticleRequest $request)
     {
-        //
+        $createArticle = [
+            'title' => $request['title'],
+            'author' => $request['author'],
+            'date' => $request['date'],
+            'content' => $request['content'],
+            'article_category_id' => $request['article_category_id'],
+        ];
+
+        if ($request->hasFile('image')) {
+            $imagePath = Storage::put('articles', $request->file('image'));
+            $createArticle['image'] = $imagePath;
+        }
+
+        Article::create($createArticle);
+        return redirect()->route('admin.articles.index')->with('success', 'Article created successfully.');
     }
 
     /**

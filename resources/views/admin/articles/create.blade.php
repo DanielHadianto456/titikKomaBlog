@@ -9,7 +9,7 @@
         <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
             <div class="bg-white dark:bg-gray-800 overflow-hidden shadow-sm sm:rounded-lg p-4">
                 <div class="form-container">
-                    <form action="#" method="POST" enctype="multipart/form-data">
+                    <form action="{{route('admin.articles.store')}}" method="POST" enctype="multipart/form-data">
                         @csrf
                         <div class="mb-4 d-flex flex-col">
                             <div class="mb-2">
@@ -48,7 +48,7 @@
                                 <label for="category" class="text-[#000000] dark:text-[#FFFF]">Categories</label>
                             </div>
                            <div>
-                                <select name="category_id" id="category" class="w-full p-2 border border-gray-300 rounded-md">
+                                <select name="article_category_id" id="category" class="w-full p-2 border border-gray-300 rounded-md">
                                     @foreach ($categories as $category)
                                         <option value="{{ $category->id }}">{{ $category->name }}</option>
                                     @endforeach
@@ -62,7 +62,10 @@
                            <div>
                              <textarea name="content" id="content" class="w-full p-2 border border-gray-300 rounded-md"></textarea>
                            </div>
-                        </div>                        
+                        </div>
+                        <button>
+                            Submit
+                        </button>                        
                     </form>
                 </div>
             </div>
